@@ -4,6 +4,24 @@
  npm install
 ```
 
+## Sample .env File for Development
+
+Create a .env file into the root directory of the project
+```plaintext
+# Node Environment
+NODE_ENV=development
+
+# Database Configuration
+DB_USERNAME=my_username
+DB_PASSWORD=my_password
+DB_NAME=my_database
+DB_HOST=my_database_host
+DIALECT=mysql
+DB_PORT=3306
+
+# Application Secret
+SECRET=my_secret_key
+
 ## Running the app
 
 ```bash
