@@ -12,7 +12,7 @@ import {
 } from '@nestjs/common';
 import { TodosService } from './todos.service';
 import { Todo } from './schemas/todo.model';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthGuard } from '../auth/auth.guard';
 @UseGuards(AuthGuard)
 @Controller('todos')
 export class TodosController {

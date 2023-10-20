@@ -6,7 +6,7 @@ import {
   ForeignKey,
   DataType,
 } from 'sequelize-typescript';
-import { User } from 'src/users/schemas/user.model';
+import { User } from '../../users/schemas/user.model';
 import { UUIDV4 } from 'sequelize';
 
 @Table
