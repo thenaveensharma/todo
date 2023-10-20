@@ -6,8 +6,6 @@ import {
 import { UsersService } from '../users/users.service';
 import * as bcrypt from 'bcryptjs'; // Importing bcrypt library for password hashing
 import { JwtService } from '@nestjs/jwt';
-console.log(process.env);
-
 @Injectable()
 export class AuthService {
   constructor(
