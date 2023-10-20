@@ -79,6 +79,9 @@ export class TodosService {
         throw new UnauthorizedException('No todo is available');
       }
       todo.destroy();
+      return {
+        message: 'Todo deleted successfully',
+      };
     } catch (error) {
       console.log(error);
     }

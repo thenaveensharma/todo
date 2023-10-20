@@ -17,10 +17,7 @@ export class AuthGuard implements CanActivate {
     if (!token) {
       throw new UnauthorizedException();
     }
-    console.log(
-      '🚀 ~ file: auth.guard.ts:19 ~ AuthGuard ~ canActivate ~ token:',
-      token,
-    );
+
     try {
       const payload = await this.verifyAccessToken(token);
       // 💡 We're assigning the payload to the request object here
@@ -39,7 +36,7 @@ export class AuthGuard implements CanActivate {
   // verify access token of user
   async verifyAccessToken(token: string) {
     return await this.jwtService.verifyAsync(token, {
-      secret: process.env.SECRET
+      secret: process.env.SECRET,
     });
   }
 }
